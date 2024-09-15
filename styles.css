@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1px;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  border: 2px solid #333;
+  margin-bottom: 10px;
+}
+
+.cell {
+  background-color: purple;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Custom file input styling */
+input[type="file"] {
+  display: none;
+}
+
+#uploadButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fcfeff;
+  color: rgb(0, 0, 0);
+  /* border: 
+    takes: 1px solid #333;
+    */
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#uploadButton:hover {
+  background-color: #f0f0f0;
+}
+
+#clickCounter {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#revealAllButton {
+  background-color: #e07739;
+}
+
+#revealAllButton:hover {
+  background-color: #d86f33;
+}
+
+#resetButton {
+  background-color: #df3b25;
+}
+
+#resetButton:hover {
+  background-color: #d1331f;
+}
